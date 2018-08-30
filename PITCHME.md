@@ -63,7 +63,7 @@ Note:
 ---?image=/assets/images/slides/Slide4.JPG
 @title[UEFI Driver Wizard  Overview]
 <br>
-<p align="left"><span class="gold" >UEFI Driver Wizard  Overview</span></p>
+<p align="left"><span class="gold" ><b>UEFI Driver Wizard  Overview</b></span></p>
 <br>
 <div class="left1">
 <ul style="list-style-type:none">
@@ -81,7 +81,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide5.JPG
 @title[Installing UEFI Driver Wizard]
-<p align="right"><span class="gold" >Installing UEFI Driver Wizard</span></p>
+<p align="right"><span class="gold" ><b>Installing UEFI Driver Wizard</b></span></p>
 <span style="font-size:01.0em" ><font color="#92D050">Requirements and Options </font></span><br>
 <br>
 <ul style="list-style-type:disc">
@@ -101,7 +101,7 @@ Same as slide
 ---?image=/assets/images/slides/Slide6.JPG
 @title[Requirements for Your Driver ]
 <br>
-<p align="center"><span class="gold" >Requirements for Your Driver </span></p>
+<p align="center"><span class="gold" ><b>Requirements for Your Driver </b></span></p>
 <span style="font-size:0.9em" >Using UEFI Driver Wizard</span>
 <ul>
    <li><span style="font-size:0.7em" >UEFI Device Driver </span></li>
@@ -119,7 +119,7 @@ Note:
 ---?image=/assets/images/slides/Slide7.JPG
 <!-- .slide: data-transition="none" -->
 @title[Template File Contents]
-<p align="right"><span class="gold" >Template File Contents </span></p>
+<p align="right"><span class="gold" ><b>Template File Contents </b></span></p>
 
 Note:
 - Establishes a proper UEFI Driver Entry Point
@@ -135,7 +135,7 @@ Note:
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[Template File Contents 02]
-<p align="right"><span class="gold" >Template File Contents </span></p>
+<p align="right"><span class="gold" ><b>Template File Contents </b></span></p>
 
 Note:
 - Establishes a proper UEFI Driver Entry Point
@@ -150,7 +150,7 @@ Note:
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[Template File Contents 03]
-<p align="right"><span class="gold" >Template File Contents </span></p>
+<p align="right"><span class="gold" ><b>Template File Contents </b></span></p>
 
 Note:
 - Establishes a proper UEFI Driver Entry Point
@@ -165,7 +165,7 @@ Note:
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[Template File Contents 04]
-<p align="right"><span class="gold" >Template File Contents </span></p>
+<p align="right"><span class="gold" ><b>Template File Contents </b></span></p>
 
 Note:
 - Establishes a proper UEFI Driver Entry Point
@@ -180,7 +180,7 @@ Note:
 @title[Lab 1: Create a UEFI Driver section]
 <br>
 <br>
-<p align="Left"><span class="gold" >Lab 1: Create a UEFI Driver with the UEFI Driver Wizard </span></p>
+<p align="Left"><span class="gold" ><b>Lab 1: Create a UEFI Driver with the UEFI Driver Wizard </b></span></p>
 <br>
 <div class="left1">
 <ul>
@@ -198,14 +198,13 @@ Note:
 
 ---?image=/assets/images/slides/Slide12.JPG
 @title[Lab 1: Install UEFI Driver Wizard ]
-<br>
-<p align="right"><span class="gold" >Lab 1: Install UEFI Driver Wizard</span></p>
+<p align="right"><span class="gold" ><b>Lab 1: Install UEFI Driver Wizard</b></span></p>
 <span style="font-size:0.8em" >First setup for building EDK II for Nt32, See <a href="https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/2">Lab Setup</a>  </span></li>
 <div class="left1">
 <ul style="list-style-type:none">
   <li><span style="font-size:0.8em" >Install UEFI Driver Wizard</span></li><br>
   <li><span style="font-size:0.7em" >1. <b>Open</b> and <b>Run</b><br>&nbsp;&nbsp;&nbsp;</span><span style="font-size:0.5em" >`/FW/DriverWizard/UefiDriverWizard.msi`</span></li>
-  <li><span style="font-size:0.7em" >2. <b>Click </b> through "Next" until install finishes</span></li><br><br><br>
+  <li><span style="font-size:0.7em" >2. <b>Click </b> through "Next" until install finishes</span></li><br><br>
   <li><span style="font-size:0.8em" ><b>Open</b> the UEFI Driver Wizard</span></li>
 </ul>
 </div>
@@ -219,7 +218,7 @@ same as slide
 
 ---?image=/assets/images/slides/Slide13.JPG
 @title[Lab 1: UefiDriverWizard -Select Work Space]
-<p align="right"><span class="gold" >Lab 1: UefiDriverWizard -Select Work Space</span></p>
+<p align="right"><span class="gold" ><b>Lab 1: UEFI Driver Wizard -Select Work Space</b></span></p>
 <div class="left2">
 <ul style="list-style-type:none" style="line-height:0.7;">
    <li><span style="font-size:0.7em" >Click on <b>File</b> and Select <br>“Open WORKSPACE” </span></li>
@@ -253,7 +252,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide14.JPG
 @title[Lab 1: -Create a New UEFI Driver]
-<p align="center"><span class="gold" >Lab 1: Create a <u>N</u>ew UEFI Driver</span></p>
+<p align="center"><span class="gold" ><b>Lab 1: Create a <u>N</u>ew UEFI Driver</b></span></p>
 <br>
 <span style="font-size:0.8em" >Control+<u>N</u> - to Open Menu</span>
 Note:
@@ -262,8 +261,8 @@ Note:
 
 ---?image=/assets/images/slides/Slide15.JPG
 @title[Lab 1: New UEFI Driver Menu]
-<p align="left"><span class="gold" >&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;Lab 1:</span></p>
-<p align="left"><span class="gold" >New UEFI Driver Menu</span></p>
+<p align="left"><span class="gold" ><b>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;Lab 1:</b></span></p>
+<p align="left"><span class="gold" ><b>New UEFI Driver Menu</b></span></p>
 <div class="left1">
 <ul style="list-style-type:disc">
   <li><span style="font-size:0.7em" >“UEFI Driver Path” – Type: <b>“MyWizardDriver”</b></span>  </li>
@@ -300,7 +299,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide16.JPG
 @title[Lab 1: UEFI Driver Model Optional Features]
-<p align="right"><span class="gold" >Lab 1: UEFI Driver Model Optional Features</span></p>
+<p align="right"><span class="gold" ><b>Lab 1: UEFI Driver Model Optional Features</b></span></p>
 <div class="left1">
 <ul style="list-style-type:none">
   <li><span style="font-size:0.8em" ><b>Ensure</b> all the forms, radio buttons, and boxes are filled in and <b>selected exactly</b> like the image to the right.</span>  </li>
@@ -335,7 +334,7 @@ Note:
 ---?image=/assets/images/slides/Slide17.JPG
 @title[Lab 1: UEFI Driver Consumed Protocol]
 <br>
-<p align="left"><span class="gold" >Lab 1: UEFI Driver Consumed Protocol</span></p>
+<p align="left"><span class="gold" ><b>Lab 1: UEFI Driver Consumed Protocol</b></span></p>
 <span style="font-size:0.8em" ><b>Select</b></span> <br>
 <span style="font-size:0.7em" >&check;&nbsp;&nbsp;"PCI Driver that consumes the PCI I/O Protocol”  </span>  
 <div class="left1">
@@ -366,7 +365,7 @@ Same as slide
 
 ---?image=/assets/images/slides/Slide18.JPG
 @title[Lab 1: UEFI Driver Produced Protocols]
-<p align="right"><span class="gold" >Lab 1: UEFI Driver Produced Protocols</span></p>
+<p align="right"><span class="gold" ><b>Lab 1: UEFI Driver Produced Protocols</b></span></p>
 <br>
 <div class="left1">
 <ul style="list-style-type:none">
@@ -397,7 +396,7 @@ Same as slide
 ---?image=/assets/images/slides/Slide19.JPG
 @title[Lab 1: UEFI Driver Created]
 <br>
-<p align="left"><span class="gold" >Lab 1: UEFI Driver Created</span></p>
+<p align="left"><span class="gold" ><b>Lab 1: UEFI Driver Created</b></span></p>
 <span style="font-size:0.8em" > UEFI Driver template created</span>
 
 Note:
