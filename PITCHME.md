@@ -3,7 +3,7 @@
 <br><br><br><br><br>
 ## <span class="gold"   >UEFI & EDK II Training</span>
 
-#### UEFI Driver Wizard Win Lab
+#### UEFI Driver Wizard Lab - Windows
 
 <br>
 <span style="font-size:0.75em" ><a href='http://www.tianocore.org'>tianocore.org</a></span>
@@ -80,14 +80,14 @@ Note:
 Note:
 
 ---?image=/assets/images/slides/Slide5.JPG
-@title[Installing Python for UEFI Driver Wizard]
-<p align="right"><span class="gold" >Installing Python for UEFI Driver Wizard</span></p>
+@title[Installing UEFI Driver Wizard]
+<p align="right"><span class="gold" >Installing UEFI Driver Wizard</span></p>
 <span style="font-size:01.0em" ><font color="#92D050">Requirements and Options </font></span><br>
 <br>
 <ul style="list-style-type:disc">
   <li><span style="font-size:0.8em" >Work space  must contain BaseTools, MdePkg & MdeModulePkg Packages from <a href="https://github.com/tianocore/tianocore.github.io/wiki/Driver-Developer">UDK2018</a> for Driver development on Tianocore.org </span> </li>
   <li><span style="font-size:0.8em" >Uses previous lab’s setup w/ Windows  `C:/FW/src/edk2`   </span> </li>
-  <li><span style="font-size:0.8em" >Python scripts from  <a href="https://github.com/tianocore/edk2-share/tree/master/DriverDeveloper/UefiDriverWizard">Github Link </a> then use instructions from README for Python and wxPython versions to install then run</span> </li>
+  <li><span style="font-size:0.8em" >For Linux, Python scripts from  <a href="https://github.com/tianocore/edk2-share/tree/master/DriverDeveloper/UefiDriverWizard">Github Link </a> then use instructions from README for Python and wxPython versions to install then run</span> </li>
   <ul style="list-style-type:none">
     <li><span style="font-size:0.6em" >&nbsp;&nbsp;<span style="background-color: #101010">`bash$ python launch.py`</span> </span></li>
   </ul>
@@ -202,13 +202,11 @@ Note:
 <p align="right"><span class="gold" >Lab 1: Install UEFI Driver Wizard</span></p>
 <span style="font-size:0.8em" >First setup for building EDK II for Nt32, See <a href="https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/2">Lab Setup</a>  </span></li>
 <div class="left1">
-<ul>
-   <li><span style="font-size:0.8em" >Install UEFI Driver Wizard</span></li>
-    <ul style="list-style-type:none">
-       <li><span style="font-size:0.7em" >1. <b>Open</b> and <b>Run</b><br>&nbsp;&nbsp;&nbsp;&nbsp;`/FW/DriverWizard/UefiDriverWizard.msi`</span></li>
-       <li><span style="font-size:0.7em" >2. <b>Click </b> through "Next" until install finishes<br></span></li>
-       <li><span style="font-size:0.7em" ><b>Open</b> the UEFI Driver Wizard</span></li>
-   </ul>
+<ul style="list-style-type:none">
+  <li><span style="font-size:0.8em" >Install UEFI Driver Wizard</span></li><br>
+  <li><span style="font-size:0.7em" >1. <b>Open</b> and <b>Run</b><br>&nbsp;&nbsp;&nbsp;`/FW/DriverWizard/UefiDriverWizard.msi`</span></li>
+  <li><span style="font-size:0.7em" >2. <b>Click </b> through "Next" until install finishes</span></li><br><br><br>
+  <li><span style="font-size:0.8em" ><b>Open</b> the UEFI Driver Wizard</span></li>
 </ul>
 </div>
 <div class="right1">
@@ -222,16 +220,16 @@ same as slide
 ---?image=/assets/images/slides/Slide13.JPG
 @title[Lab 1: UefiDriverWizard -Select Work Space]
 <p align="right"><span class="gold" >Lab 1: UefiDriverWizard -Select Work Space</span></p>
-<div class="left1">
-<ul style="list-style-type:none" style="line-height:0.8;">
-   <li><span style="font-size:0.8em" >Click on <b>File</b> and Select <br>“Open WORKSPACE” </span></li>
-   <li><span style="font-size:0.8em" >&nbsp;&nbsp;&nbsp;&nbsp;OR</span></li>
-   <li><span style="font-size:0.8em" >Control+<u>O</u><br><br></span></li>
-   <li><span style="font-size:0.8em" ><b>Browse</b> to `C:/FW/edk2`</span></li>
-   <li><span style="font-size:0.8em" ><b>Select</b> "`OK`"</span></li>
-   <li><span style="font-size:0.8em" >Should say "`WORKSPACE C:/FW/edk2 selected`"<br><br></span></li>
+<div class="left2">
+<ul style="list-style-type:none" style="line-height:0.7;">
+   <li><span style="font-size:0.7em" >Click on <b>File</b> and Select <br>“Open WORKSPACE” </span></li>
+   <li><span style="font-size:0.7em" >&nbsp;&nbsp;&nbsp;&nbsp;OR</span></li>
+   <li><span style="font-size:0.7em" >Control+<u>O</u><br><br></span></li>
+   <li><span style="font-size:0.7em" ><b>Browse</b> to `C:/FW/edk2`</span></li>
+   <li><span style="font-size:0.7em" ><b>Select</b> "`OK`"</span></li>
+   <li><span style="font-size:0.7em" >Should say "`WORKSPACE C:/FW/edk2 selected`"<br><br></span></li>
 </ul>
-<span style="font-size:0.5em" ><b>Note:</b> the environment for EDK II must be setup with `edksetup.bat` </span>
+<p style="line-height:80%"><span style="font-size:0.5em" ><b>Note:</b> the environment for EDK II must be setup with `edksetup.bat` </span></p>
 </div>
 <div class="right1">
 <span style="font-size:0.8em" >&nbsp;  </span>
@@ -256,7 +254,8 @@ Note:
 ---?image=/assets/images/slides/Slide14.JPG
 @title[Lab 1: -Create a New UEFI Driver]
 <p align="center"><span class="gold" >Lab 1: Create a <u>N</u>ew UEFI Driver</span></p>
-<span style="font-size:0.9em" >Control+<u>N</u> - to Open Menu</span>
+<br>
+<span style="font-size:0.8em" >Control+<u>N</u> - to Open Menu</span>
 Note:
 - Control+N – to Open Menu 
 
@@ -301,12 +300,10 @@ Note:
 
 ---?image=/assets/images/slides/Slide16.JPG
 @title[Lab 1: UEFI Driver Model Optional Features]
-<br>
-<p align="left"><span class="gold" >Lab 1: UEFI Driver Model Optional Features</span></p>
+<p align="right"><span class="gold" >Lab 1: UEFI Driver Model Optional Features</span></p>
 <div class="left1">
 <ul style="list-style-type:none">
   <li><span style="font-size:0.8em" ><b>Ensure</b> all the forms, radio buttons, and boxes are filled in and <b>selected exactly</b> like the image to the right.</span>  </li>
-  <br>
   <br>
   <li><span style="font-size:0.6em" >&check;&nbsp;&nbsp;"Componnt Name 2 Prorocol”  </span>  </li>
   <li><span style="font-size:0.6em" >&check;&nbsp;&nbsp;"Componnt Name Prorocol”   </span>  </li>
@@ -381,7 +378,7 @@ Same as slide
   <br>
   <br>
   <br>
-  <li><span style="font-size:0.8em" >&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; <b>Click</b>  </li>
+  <li><span style="font-size:0.8em" >&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; <b>Click</b>  </li>
 </ul>
 </div>
 <div class="right1">
