@@ -204,7 +204,7 @@ Note:
 <div class="left1">
 <ul style="list-style-type:none">
   <li><span style="font-size:0.8em" >Install UEFI Driver Wizard</span></li><br>
-  <li><span style="font-size:0.7em" >1. <b>Open</b> and <b>Run</b><br>&nbsp;&nbsp;&nbsp;`/FW/DriverWizard/UefiDriverWizard.msi`</span></li>
+  <li><span style="font-size:0.7em" >1. <b>Open</b> and <b>Run</b><br>&nbsp;&nbsp;&nbsp;</span><span style="font-size:0.5em" >`/FW/DriverWizard/UefiDriverWizard.msi`</span></li>
   <li><span style="font-size:0.7em" >2. <b>Click </b> through "Next" until install finishes</span></li><br><br><br>
   <li><span style="font-size:0.8em" ><b>Open</b> the UEFI Driver Wizard</span></li>
 </ul>
@@ -227,7 +227,7 @@ same as slide
    <li><span style="font-size:0.7em" >Control+<u>O</u><br><br></span></li>
    <li><span style="font-size:0.7em" ><b>Browse</b> to `C:/FW/edk2`</span></li>
    <li><span style="font-size:0.7em" ><b>Select</b> "`OK`"</span></li>
-   <li><span style="font-size:0.7em" >Should say "`WORKSPACE C:/FW/edk2 selected`"<br><br></span></li>
+   <li><span style="font-size:0.7em" >Should say</span><span style="font-size:0.5em" > "`WORKSPACE C:/FW/edk2 selected`"</span></li><br><br>
 </ul>
 <p style="line-height:80%"><span style="font-size:0.5em" ><b>Note:</b> the environment for EDK II must be setup with `edksetup.bat` </span></p>
 </div>
@@ -310,6 +310,8 @@ Note:
   <li><span style="font-size:0.6em" >&check;&nbsp;&nbsp;"HII Packages for Forms . . .”  </span>  </li>
   <br>
   <br>
+  <br>
+  <br>
   <li><span style="font-size:0.8em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; <b>Click</b>  </li>
  </ul>
 </div>
@@ -338,7 +340,6 @@ Note:
 <span style="font-size:0.7em" >&check;&nbsp;&nbsp;"PCI Driver that consumes the PCI I/O Protocol”  </span>  
 <div class="left1">
 <ul style="list-style-type:none">
-  <br>
   <br>
   <br>
   <br>
