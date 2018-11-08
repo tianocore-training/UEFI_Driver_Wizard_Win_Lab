@@ -199,7 +199,7 @@ Note:
 ---?image=/assets/images/slides/Slide12.JPG
 @title[Lab 1: Install UEFI Driver Wizard ]
 <p align="right"><span class="gold" ><b>Lab 1: Install UEFI Driver Wizard</b></span></p>
-<span style="font-size:0.8em" >First setup for building EDK II for Nt32, See <a href="https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/2">Lab Setup</a>  </span></li>
+<span style="font-size:0.8em" >First setup for building EDK II for Nt32, See <a href="https://gitpitch.com/tianocore-training/Platform_Build_Win_Lab/master#/2">Lab Setup</a>  </span></li>
 <div class="left1">
 <ul style="list-style-type:none">
   <li><span style="font-size:0.8em" >Install UEFI Driver Wizard</span></li><br>
