@@ -4,13 +4,15 @@
 ## <span class="gold"   >UEFI & EDK II Training</span>
 
 #### UEFI Driver Wizard Lab - Windows
+<span style="font-size:0.75em" >See also
+<a href="https://github.com/Tianocore-training/UEFI_Driver_Wizard_Win_lab/blob/master/LabGuide.md">LabGuide.md </a> for Copy & Paste examples in labs</span>
 
 <br>
 <span style="font-size:0.75em" ><a href='http://www.tianocore.org'>tianocore.org</a></span>
 Note:
   PITCHME.md for UEFI / EDK II Training  UEFI Driver Wizard Win Lab
 
-  Copyright (c) 2018, Intel Corporation. All rights reserved.<BR>
+  Copyright (c) 2020, Intel Corporation. All rights reserved.<BR>
 
   Redistribution and use in source (original document form) and 'compiled'
   forms (converted to PDF, epub, HTML and other formats) with or without
@@ -68,7 +70,7 @@ Note:
 <div class="left1">
 <ul style="list-style-type:none">
   <li><span style="font-size:0.8em" ><font color="cyan">&check;&nbsp;&nbsp;Open source tool  </font> </span>  </li>
-  <li><span style="font-size:0.8em" ><font color="white">&check;&nbsp;&nbsp;Based on Driver Writer’s Guide for UEFI 2.3.1 content</font> </span>  </li>
+  <li><span style="font-size:0.8em" ><font color="white">&check;&nbsp;&nbsp;Based on Driver Writer’s Guide &nbsp;&nbsp;&nbsp; for UEFI 2.3.1 content</font> </span>  </li>
   <li><span style="font-size:0.8em" ><font color="cyan">&check;&nbsp;&nbsp;Intel engineers contributed   </font> </span>  </li>
   <li><span style="font-size:0.8em" ><font color="white">&check;&nbsp;&nbsp;Located on <a href="http://www.tianocore.org">www.TianoCore.org</a>  </font> </span>  </li>
 </ul>
@@ -85,8 +87,8 @@ Note:
 <span style="font-size:01.0em" ><font color="#92D050">Requirements and Options </font></span><br>
 <br>
 <ul style="list-style-type:disc">
-  <li><span style="font-size:0.8em" >Work space  must contain BaseTools, MdePkg & MdeModulePkg Packages from <a href="https://github.com/tianocore/tianocore.github.io/wiki/Driver-Developer">UDK2018</a> for Driver development on Tianocore.org </span> </li>
-  <li><span style="font-size:0.8em" >Uses previous lab’s setup w/ Windows  `C:/FW/src/edk2`   </span> </li>
+  <li><span style="font-size:0.8em" >Work space  must contain BaseTools, MdePkg & MdeModulePkg Packages from <a href="https://github.com/tianocore/edk2">Tianocore.org edk2</a> for Driver development on Tianocore.org </span> </li>
+  <li><span style="font-size:0.8em" >This lab uses previous lab’s setup w/ Windows  `C:/FW/src/edk2`   </span> </li>
   <li><span style="font-size:0.8em" >For Linux, Python scripts from  <a href="https://github.com/tianocore/edk2-share/tree/master/DriverDeveloper/UefiDriverWizard">Github Link </a> then use instructions from README for Python and wxPython versions to install then run</span> </li>
   <ul style="list-style-type:none">
     <li><span style="font-size:0.6em" >&nbsp;&nbsp;<span style="background-color: #101010">`bash$ python launch.py`</span> </span></li>
@@ -120,7 +122,7 @@ Same as slide
    <li><span style="font-size:0.7em" >Unloadable driver </span></li>
    <li><span style="font-size:0.7em" >Support IA32 & x64 CPUs </span></li>
    <li><span style="font-size:0.7em" >Returns component name information </span></li>
-   <li><span style="font-size:0.7em" >Test console device </span></li>
+   <li><span style="font-size:0.7em" >Byte stream device (i.e.UART / Serial I/O) </span></li>
    <li><span style="font-size:0.7em" >Option to produce strings & forms for setup  </span></li>
 </ul>
 @snapend
@@ -218,7 +220,7 @@ Note:
 ---?image=/assets/images/slides/Slide12.JPG
 @title[Lab 1: Install UEFI Driver Wizard ]
 <p align="right"><span class="gold" ><b>Lab 1: Install UEFI Driver Wizard</b></span></p>
-<span style="font-size:0.8em" >First setup for building EDK II for Nt32, See <a href="https://gitpitch.com/tianocore-training/Platform_Build_Win_Lab/master#/2">Lab Setup</a>  </span></li>
+<span style="font-size:0.8em" >First setup for building EDK II for Emulator, See <a href="https://gitpitch.com/tianocore-training/Platform_Build_Win_Emulator_Lab/master#/9">Lab Setup</a>  </span></li>
 <div class="left1">
 <ul style="list-style-type:none">
   <li><span style="font-size:0.8em" >Install UEFI Driver Wizard</span></li><br>
@@ -243,9 +245,9 @@ same as slide
    <li><span style="font-size:0.7em" >Click on <b>File</b> and Select <br>“Open WORKSPACE” </span></li>
    <li><span style="font-size:0.7em" >&nbsp;&nbsp;&nbsp;&nbsp;OR</span></li>
    <li><span style="font-size:0.7em" >Control+<u>O</u><br><br></span></li>
-   <li><span style="font-size:0.7em" ><b>Browse</b> to `C:/FW/edk2`</span></li>
+   <li><span style="font-size:0.7em" ><b>Browse</b> to `C:/FW/edk2-ws/edk2`</span></li>
    <li><span style="font-size:0.7em" ><b>Select</b> "`OK`"</span></li>
-   <li><span style="font-size:0.7em" >Should say</span><span style="font-size:0.5em" > "`WORKSPACE C:/FW/edk2 selected`"</span></li><br><br>
+   <li><span style="font-size:0.7em" >Should say</span><span style="font-size:0.5em" > "`WORKSPACE C:/FW/edk2-ws/edk2 selected`"</span></li><br><br>
 </ul>
 <p style="line-height:80%"><span style="font-size:0.5em" ><b>Note:</b> the environment for EDK II must be setup with `edksetup.bat` </span></p>
 </div>
@@ -262,9 +264,9 @@ Note:
 -    Or 
 - Control+O  
 
-- Browse to C:/FW/edk2 
+- Browse to C:/FW/edk2-ws/edk2 
 - Select  “OK”
-- Should say “WORKSPACE C:\FW\edk2 selected
+- Should say “WORKSPACE C:\FW\edk2-ws\edk2 selected
 
 - another note, the environment for EDK II must be setup with edksetup.bat 
 
@@ -477,7 +479,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWIS
 ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF THE POSSIBILITY 
 OF SUCH DAMAGE.
 
-Copyright (c) 2018, Intel Corporation. All rights reserved.
+Copyright (c) 2020, Intel Corporation. All rights reserved.
 **/
 
 ```
